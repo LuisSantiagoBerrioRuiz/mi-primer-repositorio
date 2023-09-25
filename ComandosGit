@@ -20,3 +20,5 @@ git commit -m "comentario" // añade un comentario al git del archivo
 git config // se usa para configurar el git y poder hacer commit
 git log // muestra la historia del archivo
 git show // muestra los cambios que ha sufrido el archivo
+        // este comando muestra el codigo del commit que se puede usar para diferenciar entre versiones del archivo
+git diff // necesita dos codigos del commit para diferenciar entre versiones y cuales han sido las mofificafiones entre estas
