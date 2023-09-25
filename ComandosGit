@@ -15,7 +15,7 @@ git status // muestra el estado actual del git
 git add // añade el archivo al cache
 git add . // añade todos los cambios de la carpeta
 git commit // añade un git al archivo, osea el guarda las modificaciones en el git
-            // si se añade un commit sin comentario se debe agregar el comentario y presionar Ctrl + z + z para salir del campo mostrado
+            // si se añade un commit sin comentario se debe agregar el comentario y presionar Esc + Shift + z + z para salir del campo mostrado
 git commit -m "comentario" // añade un comentario al git del archivo
 git config // se usa para configurar el git y poder hacer commit
 git log // muestra la historia del archivo
