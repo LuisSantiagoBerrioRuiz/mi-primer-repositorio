@@ -44,7 +44,7 @@ git clone :url: // Hago una copia de un repositorio y directorio remoto a mi rep
 git push // envia mi repositorio local al repositorio remoto
 git fetch // copia solo el repositorio remoto a mi repositorio local 
 git merge // copia solo el directorio remoto a mi directorio local
-git pull // copia el repositorio y directorio remoto a mi directorio local
+git pull // copia el repositorio y directorio remoto a mi oyedirectorio local
 
 git branch :nombre: // crea una nueva rama con nombre
         Las ramas nos permiten modificar los archivos de forma rapida y precisa
