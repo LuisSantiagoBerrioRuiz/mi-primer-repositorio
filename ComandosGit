@@ -10,6 +10,7 @@ ls // mostrar archivos y carpetas
         -al // argumentos a: archios ocultos; l: listar
 clear // limpiar consola o ctrl + l 
 touch // crear archivos vacios 
+
 git status // muestra el estado actual del git
 git add // añade el archivo al cache
 git add . // añade todos los cambios de la carpeta
@@ -17,10 +18,13 @@ git commit // añade un git al archivo, osea el guarda las modificaciones en el 
         Si se añade un commit sin comentario se debe agregar el comentario y presionar Esc + Shift + z + z para salir del campo mostrado
         -m "comentario" // añade un comentario al git del archivo
 git config // se usa para configurar el git y poder hacer commit
+
 git log // muestra la historia del archivo
+        --stat // muestra más detalles de los commit y el historial
 git show // muestra los cambios que ha sufrido el archivo
         Este comando muestra el codigo del commit que se puede usar para diferenciar entre versiones del archivo
 git diff // necesita dos codigos del commit para diferenciar entre versiones y cuales han sido las mofificafiones entre estas
+
 rm :archivo: // borrar archivos y carpetas 
         --catched // Elimina archivos del repositorio local y del área de staging, pero los mantiene en el disco duro. Deja de trackear el historial de cambios de estos archivos, por lo que quedan en estado untracked. 
         --force: // Elimina los archivos de Git y del disco duro. Git guarda todo, por lo que podemos recuperar archivos eliminados si es necesario (empleando comandos avanzados).
@@ -33,9 +37,14 @@ git reset HEAD // El comando git reset saca archivos del área de staging sin bo
                 mientras que git reset saca los cambios del área de preparación y los mueve del espacio de trabajo, sin afectar la historia del repositorio.
 git checkout :codigo commit: :archivo: // devuelve el archivo en especifico para que pueda ser modificado
                 Este comando es el que se usa para hacer cambios y actualizaciones en los proyectos
+                :rama: // nos mueve a la rama especificada
+
 git clone :url: // Hago una copia de un repositorio y directorio remoto a mi repositorio y directorio local
                 Este comando se usa la primera vez para traer el proyecto a colaborar, despues se usan los siguientes comandos
 git push // envia mi repositorio local al repositorio remoto
 git fetch // copia solo el repositorio remoto a mi repositorio local 
 git merge // copia solo el directorio remoto a mi directorio local
 git pull // copia el repositorio y directorio remoto a mi directorio local
+
+git branch :nombre: // crea una nueva rama con nombre
+        Las ramas nos permiten modificar los archivos de forma rapida y precisa
