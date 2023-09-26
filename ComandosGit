@@ -33,3 +33,9 @@ git reset HEAD // El comando git reset saca archivos del área de staging sin bo
                 mientras que git reset saca los cambios del área de preparación y los mueve del espacio de trabajo, sin afectar la historia del repositorio.
 git checkout :codigo commit: :archivo: // devuelve el archivo en especifico para que pueda ser modificado
                 Este comando es el que se usa para hacer cambios y actualizaciones en los proyectos
+git clone :url: // Hago una copia de un repositorio y directorio remoto a mi repositorio y directorio local
+                Este comando se usa la primera vez para traer el proyecto a colaborar, despues se usan los siguientes comandos
+git push // envia mi repositorio local al repositorio remoto
+git fetch // copia solo el repositorio remoto a mi repositorio local 
+git merge // copia solo el directorio remoto a mi directorio local
+git pull // copia el repositorio y directorio remoto a mi directorio local
