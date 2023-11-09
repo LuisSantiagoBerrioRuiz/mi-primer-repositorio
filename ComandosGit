@@ -47,6 +47,8 @@ git push // envia mi repositorio local al repositorio remoto
                 --tags // solo envia los tags creados
 git fetch // copia solo el repositorio remoto a mi repositorio local 
 git merge // copia solo el directorio remoto a mi directorio local
+        :rama: // actualiza la rama actual a la rama seleccionada
+        -m :comentario:
 git pull // copia el repositorio y directorio remoto a mi directorio local
         origin // traer el repositorio remoto al local
                 --tags // trae el solo los tags creados
