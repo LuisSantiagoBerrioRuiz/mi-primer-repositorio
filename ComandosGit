@@ -11,6 +11,10 @@ ls // mostrar archivos y carpetas
 clear // limpiar consola o ctrl + l 
 touch // crear archivos vacios 
 
+se pueden guardar codigos complejos con el comando alias :noombre:=:codigo complejos:
+por ejemplo
+alias linea="git log --all --graph --decorate --oneline"
+
 git status // muestra el estado actual del git
 git add // añade el archivo al cache
 git add . // añade todos los cambios de la carpeta
@@ -43,7 +47,7 @@ git checkout :codigo commit: :archivo: // devuelve el archivo en especifico para
 git clone :url: // Hago una copia de un repositorio y directorio remoto a mi repositorio y directorio local
                 Este comando se usa la primera vez para traer el proyecto a colaborar, despues se usan los siguientes comandos
 git push // envia mi repositorio local al repositorio remoto
-        origin // envia mi repositorio local al repositorio remoto
+        origin :rama:// envia mi repositorio local al repositorio remoto
                 --tags // solo envia los tags creados
 git fetch // copia solo el repositorio remoto a mi repositorio local 
 git merge // copia solo el directorio remoto a mi directorio local
