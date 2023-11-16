@@ -1,0 +1,14 @@
+# este es un archivo para ignorar los archivos mencionados
+
+# este es la forma de decirle que ignore todo los archivos de este tipo
+*.jpg
+*.png
+
+# así se ignora las carpetas
+carpeta
+
+# así se ignora un archivo dentro de una carpeta
+carpeta/anotacion.png
+
+# así se agregan excepciones dentro de los archivos que tiene que ignorar
+# !carpeta/anotacion.png
