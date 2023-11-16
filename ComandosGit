@@ -66,4 +66,5 @@ git tags  // Muestra los tags creados. Los tags nos permiten identificar los arc
 git branch // Muestra las ramas creadas. Las ramas nos permiten modificar los archivos de forma rapida y precisa
         :nombre: // crea una nueva rama con nombre
 
-        
+git rebase // reescribe la historia del repositorio, cambia la historia de donde comenzó la rama y solo debe ser usado de manera local
+                
