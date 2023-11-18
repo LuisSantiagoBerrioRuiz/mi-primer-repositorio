@@ -67,4 +67,9 @@ git branch // Muestra las ramas creadas. Las ramas nos permiten modificar los ar
         :nombre: // crea una nueva rama con nombre
 
 git rebase // reescribe la historia del repositorio, cambia la historia de donde comenzó la rama y solo debe ser usado de manera local
-                
+               
+git stash // nos sirve para guardar cambios para después (to stash se puede traducir como almacenar)
+        pop // agrega los cambios guardados en el stash anterior
+        list // muestra la lista de los stashed guardados
+        branch :rama: // crea una rama en la que agrega el stash "sin hacer commit"
+        drop // elimina el stach guardado
