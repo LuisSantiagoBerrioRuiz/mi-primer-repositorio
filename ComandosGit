@@ -28,11 +28,13 @@ git commit // añade un git al archivo, osea el guarda las modificaciones en el 
         Si se añade un commit sin comentario se debe agregar el comentario y presionar Esc + Shift + z + z para salir del campo mostrado
         -m "comentario" // añade un comentario al git del archivo
         -am "comentario" // añade los cambios no guardados en el staging y un comentario al git del archivo
+        --amend // permite reguardar el commit anterior (se debe agregar los cambios verdaderos al staging con git add, por si solo no los agrega como -am)
 
 git config // se usa para configurar el git y poder hacer commit
 
 git log // muestra la historia del archivo
         --stat // muestra más detalles de los commit y el historial
+        -S :palabra: // muestra todos los commits donde se encuentra la palabra, puede ser en el comentario de ste o en las ramas usadas para el commit
 
 git show // muestra los cambios que ha sufrido el archivo
         Este comando muestra el codigo del commit que se puede usar para diferenciar entre versiones del archivo
@@ -80,6 +82,8 @@ git tags  // Muestra los tags creados. Los tags nos permiten identificar los arc
 
 git branch // Muestra las ramas creadas. Las ramas nos permiten modificar los archivos de forma rapida y precisa
         :nombre: // crea una nueva rama con nombre
+        -r // muestra las ramas remotas
+        -a // muestra todas las ramas  
 
 git rebase // reescribe la historia del repositorio, cambia la historia de donde comenzó la rama y solo debe ser usado de manera local
                
@@ -100,3 +104,15 @@ git clean // por si solo no funciona, hay que agregar comandos
 
 git cherry-pick :hashs:  // nos permite aplicar un commit de otra rama sin tener que aplicar un merge 
                         hay que tener cuidado ya que a la hora de aplicar el merge puede generar conflictos  
+
+git grep :palabra: // permite buscar palabras en los archivos
+        -n // muestra la linea donde se encuentra la palabra
+        -c // cuentas cuantas veces se encuentra la palabra en los archivos
+
+git shortlog // muestra quienes han realizado los commits en el repositorio
+        -sn // muestra cuantos commits han realizado en el reposotorios los colaboradores
+        --all // muestra todos los commits, incluyendo los borrados
+        --no-merge // muestra todos los commits, incluyendo los borrados pero excluyendo los merges
+
+git blame :archivo: // muestra quien hizo cada cosa linea por linea
+        -L35,50 // muestra solo las lineas 35 a 50 del archivo especificado
