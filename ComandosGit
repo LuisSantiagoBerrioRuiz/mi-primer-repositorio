@@ -73,3 +73,12 @@ git stash // nos sirve para guardar cambios para después (to stash se puede tra
         list // muestra la lista de los stashed guardados
         branch :rama: // crea una rama en la que agrega el stash "sin hacer commit"
         drop // elimina el stach guardado
+
+git clean // por si solo no funciona, hay que agregar comandos
+        --dry-run o -n // simula la eliminación, funciona para saber cuales elementos se eliminaran
+        -f // elimina los archivos sin seguimiento del directorio
+        -d // elimina directorios sin seguimiento del directorio
+        -x // elimina los archivos sin seguimiento del directorio incluyendo los ignorados (.gitignore)
+        -X // elimina solo los archivos ignorados (.gitignore)
+                estos comandos se pueden mezclar, unos ejemplo  
+                -dn -df -xdn -xdf 
